@@ -1,0 +1,42 @@
+{
+  "name": "bed-ca1-matt1129lzy-1",
+  "version": "1.0.0",
+  "description": "BED CA1 nodejs express mysql RESTFUL webservices Wellness Challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run init_tables && jest --forceExit",
+    "init_tables": "node src/configs/createSchema.js && node src/configs/initTables.js",
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "reset_tables": "node src/configs/initTables.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ST0503-BED/bed-ca1-matt1129lzy.git"
+  },
+  "keywords": [
+    "node",
+    "nodemon",
+    "express",
+    "mysql2",
+    "GET",
+    "PUT",
+    "POST",
+    "DELETE",
+    "dotenv"
+  ],
+  "author": "lzymatthew08.25@ichat.sp.edu.sg p2510880 DAAA/FT/1B/04",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ST0503-BED/bed-ca1-matt1129lzy/issues"
+  },
+  "homepage": "https://github.com/ST0503-BED/bed-ca1-matt1129lzy#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mysql2": "^3.15.3",
+    "nodemon": "^3.1.11"
+  }
+}
